@@ -1,1 +1,2 @@
-# goit-hw-02
+# home-work-webstudio
+Домашняя работа сайт WebStudio
