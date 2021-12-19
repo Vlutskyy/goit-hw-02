@@ -1,2 +1,7 @@
 body {
+  font-family: 'Raleway', 'Raleway-serif', 'Roboto', 'Roboto-serif';
+}
+
+.list {
+  list-style: none;
 }
