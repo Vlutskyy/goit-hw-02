@@ -83,8 +83,9 @@ body {
   border-radius: 4px;
 }
 
-.block-btn:hover {
-  background-color: #188ce8;
+.block-btn:hover,
+.block-btn:focus {
+  background: #188ce8;
 }
 
 /*----------НАШИ ПРЕИМУЩЕСТВА--------  */
