@@ -1,10 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -13,6 +21,7 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
@@ -20,33 +29,40 @@
     <!--Верхняя линия-->
 
     <header class="header">
-      <!-- Menu Nav -->
+      <div class="container header-container">
 
       <a class="logo link" href="" lang="en">Web<span class="logo-dark">Studio</span></a>
-
+<!-- Menu Nav -->
       <nav class="header-nav">
         <ul class="list header-list">
+          <div class="header-link">
           <li class="header-item"><a class="link header-link" href="./index.html">Студия</a></li>
 
-          <li class="header-item"><a class="link header-link" href="">Портфолио</a></li>
+          <li class="header-item">
+            <a class="link header-link" href="">Портфолио</a>
+          </li>
 
           <li class="header-item"><a class="link header-link" href="">Контакты</a></li>
+        </div>
         </ul>
       </nav>
 
-      <ul class="list">
+      <ul class="list header-contact">
         <li>
           <a class="link header-mailto" href="mailto:info@devstudio.com">info@devstudio.com</a>
         </li>
 
         <li><a class="link header-tel" href="tel:+380961111111">+38 096 111 1111</a></li>
       </ul>
+    </div>
+      
     </header>
 
     <main>
       <!--Фильтры-->
       <section class="projects">
-        <h1>Проекты</h1>
+        <div class="container filter-container">
+        <h1 class="visually-hidden">Проекты</h1>
         <ul class="list filter">
           <li class="filter-item">
             <button type="button" class="filter-btn">Все</button>
@@ -68,6 +84,7 @@
         <!--Проекты-->
 
         <ul class="list galery">
+          <div class="galery">
           <li class="galery-item">
             <a class="link galery-link" href="">
               <img src="./img/технокряк.jpg" alt="технокряк" width="370" height="294" />
@@ -141,15 +158,16 @@
               <p class="galery-text">Приложение</p></a
             >
           </li>
+        </div>
         </ul>
+      </div>
       </section>
     </main>
 
-    <footer>
-      <section class="contacts">
-        <h2>Контакты</h2>
+    <footer class="footer">
+        <div class="container">
         <a class="logo link" href="" lang="en">Web<span class="logo-white">Studio</span></a>
-        <address>
+        <address">
           <ul class="list footer-list">
             <li class="footer-item">
               <a
@@ -165,7 +183,7 @@
             <li><a class="link footer-tel" href="tel:+380961111111">+38 096 111 1111</a></li>
           </ul>
         </address>
-      </section>
+      </div>
     </footer>
   </body>
 </html>
